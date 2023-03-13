@@ -1,0 +1,16 @@
+2 - customer_shop_details -->> post - customer shoping_details add & realation with customer_id
+3 - customer_login ->> post > get - mobile.no & pswd
+4 - my_order ->> get -customer_id -->> customer shopinng details.
+
+
+customer scheema - >
+id will be auto incement unique, name,mobileno int login with this number & uniqe , anothermobile no  not cumposlary , email its not cumposlary , 
+city , pincode , address , pswd
+
+customer_shop_details - >
+
+many2one id , product_name - { product_name many2one }, total_product_amount
+
+product_name -->
+
+id many2one with customer_shop_details , prodct_name
